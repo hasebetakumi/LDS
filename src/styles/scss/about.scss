@@ -1,0 +1,13 @@
+@import 'mixin.scss';
+
+#about {
+    height: 300px;
+
+    .text {
+        padding: 25px $right_end 0px 0px;
+        text-align: right;
+        font-family: $jp-text;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

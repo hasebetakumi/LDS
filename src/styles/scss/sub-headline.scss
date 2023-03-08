@@ -1,0 +1,16 @@
+@import 'mixin.scss';
+
+.sub-headline {
+    p {
+        text-align: right;
+        margin: 20px $right_end 3px 0px;
+        font-family: $sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    div {
+        border: 0.5px solid $accent-color;
+    }
+}

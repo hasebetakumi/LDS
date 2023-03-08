@@ -1,0 +1,31 @@
+@import 'mixin.scss';
+
+.headline {
+    .line {
+        margin-top: 10px;
+        border: 1px solid $main-color;
+    }
+
+    .item-list {
+        position: relative;
+        margin: 6px 0px 0px 6px;
+        height: 64px;
+        // bundle.cssからの相対パスで指定
+        background: $main-color url(../../public/images/calligraphy.png) 0% 0% no-repeat padding-box;
+        background-size: cover;
+        // 子要素の上下中央
+        display: grid;
+        place-items: center;
+        
+        
+
+        p {
+            position: absolute;
+            right: $right_end;
+            color: $base-color;
+            font-family: $script;
+            font-size: 50px;
+            
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import 'mixin.scss';
+
+.meeting-room {
+    margin-top: 50px;
+
+    .img-list {
+        margin: 10px $right_end 0px $right_end;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .top {
+            padding-bottom: 1px;
+        }
+
+        .bottom {
+            padding-top: 1px;
+        }
+
+        .left {
+            width: 51%;
+            padding-right: 1px;
+        }
+
+        .right {
+            width: 49%;
+            padding-left: 1px;
+        }
+
+    }
+}

@@ -1,0 +1,16 @@
+@import 'mixin.scss';
+
+#access {
+    height: 1000px;
+
+    .text {
+        text-align: right;
+        margin: 10px $right-end 50px 0px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: 10px $right-end 0px $right-end;
+    }
+}

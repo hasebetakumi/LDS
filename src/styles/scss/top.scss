@@ -1,0 +1,53 @@
+@import 'mixin.scss';
+
+#top {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $main-color;
+    // 子要素を上下中央
+    display: grid;
+    place-items: center;
+
+    .frame {
+        position: absolute;
+        border: 5px solid $accent-color_translucent;
+        height: 75vh;
+        width: 95%;
+        z-index: 2;
+    }
+    .item-list {
+        // 子要素を自身に対して相対表示
+        position: relative;
+        
+        img {
+            // 縦横比固定
+            width: 100%;
+            height: auto;
+        }
+
+        .title {
+            // 親要素に対して絶対表示（親にrelative設置）
+            position: absolute;
+            // 親要素の中で上下左右中央
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+            // 文字スタイル
+            color: $base-color;
+            font-family: $script;
+            font-size: 80px;
+
+            .second {
+                padding-left: 40px;
+            }
+
+            .third {
+                padding-left: 80px;
+            }
+        }
+    }
+}
