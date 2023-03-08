@@ -11,6 +11,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    // 最前面
+    z-index: 10;
 
     div {
         width: calc(100%/3);

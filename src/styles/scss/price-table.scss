@@ -1,0 +1,15 @@
+@import 'mixin.scss';
+
+.price-table {
+    border-collapse:  collapse;
+    margin-top: 7px;
+    padding-right: $right_end;
+    display: flex;
+    justify-content: flex-end;
+    
+    td {
+        border: solid 1px;
+        padding: 1px 5px;
+        
+    }
+}
